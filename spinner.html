@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Map</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+      #loading {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        opacity: 0.7;
+        background-color: #fff;
+        z-index: 99;
+      }
+
+      #loading-image {
+        position: absolute;
+        top: 100px;
+        left: 240px;
+        z-index: 100;
+      }
+    </style>
+  </head>
+  <body onload="loaderFn()">
+    <div id="loading">
+      <img id="loading-image" src="img/loading2.gif" alt="Loading..." />
+    </div>
+    <script type="text/javascript">
+        // setTimeout(function(){document.getElementById('loading').style.display = "none";},10000);
+    </script>
+  </body>
+</html>

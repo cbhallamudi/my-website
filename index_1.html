@@ -1,0 +1,134 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Website</title>
+      <link href="./img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+      <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+      <script src="./js/jquery.js"></script>
+      <script src="./js/customjs.js"></script>
+   </head>
+   <body>
+      <!-- <div id="loading">
+      </div> -->
+      <div id="loading">
+        <img id="loading-image" src="img/loading3.gif" alt="Loading..." />
+      </div>
+
+      <div id="main_div">
+         <div id="left_div">
+            <div class="overlay">
+               <h1>Chaitanya Viswanath</h1>
+               <cite id="left_div_cite">web developer</cite>
+               <ul id="menu">
+                  <li><a href="#" onclick="getAboutContent()"><span class="bcvSpan" title="Bhallamudi">b</span>out me... <span style="color:rgb(3, 249, 249); font-size:14px;">see more</span></a></li>
+                  <li><a href="#" onclick="getProjectsContent()"><span class="bcvSpan" title="Chaitanya">c</span>reated by me... <span style="color:rgb(3, 249, 249); font-size:14px;">see more</span></a></li>
+                  <li><a href="#" onclick="getContactContent()"><span class="bcvSpan" title="Viswanath">v</span>isit me at... <span style="color:rgb(3, 249, 249); font-size:14px;">see more</span></a></li>
+                  <li></li>
+               </ul>
+            </div>
+            <div class="footer-overlay">
+               <p>copy right &copy; chaitanya viswanath bhallamudi</p>
+            </div>
+         </div>
+         <div id="right_div">
+         </div>
+      </div>
+      <div id="about_div">
+         <a class="close_button" id="right-close-btn" onclick="closeContent()"><</a>
+         <div class="div_content_about">
+            <p><img alt="" src="./img/04-full.jpg" />Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, saepe doloremque quam. Pariatur natus suscipit nobis fuga dolore blanditiis ut molestias voluptate amet magni ex similique repudiandae, excepturi hic culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloribus dicta facere accusamus natus illo id repellat dignissimos! Tenetur facilis adipisci laborum dolor quam ullam a consequuntur modi doloribus aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, at harum, quas suscipit distinctio beatae quam commodi modi est nemo. Accusantium officia iure veniam veritatis dolorum minus corrupti voluptatem expedita. Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Saepe quia aliquid dolorem explicabo accusamus laborum, ullam sit, fuga dolore tenetur cupiditate porro fugit odit ipsam ipsum obcaecati, magni exercitationem maiores? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis necessitatibus doloribus quos sequi omnis fuga optio laudantium exercitationem cum perspiciatis quasi tempora corrupti distinctio, ut numquam ex veniam. Recusandae, ab.</p>
+         </div>
+      </div>
+      <div id="projects_div">
+         <a class="close_button" id="right-close-btn" onclick="closeContent()"><</a>
+         <div class="div_content_projects">
+            
+            <div id="projects-holder">
+              <div class="project-window">
+                <img src="img/university.png">
+                <div class="project-overlay">
+                   <a href="http://cbhallamudi.com/pydah/"><h3>Pydah</h3></a>
+                </div>
+              </div><div class="project-window">
+                <img src="img/package.png">
+                <div class="project-overlay">
+                   <a href="http://cbhallamudi.com/smark/"><h3>smark</h3></a>
+                </div>
+              </div><div class="project-window">
+                <img src="img/music-note.png">
+                <div class="project-overlay">
+                   <a href="http://cbhallamudi.com/adam/"><h3>chairecords</h3></a>
+                </div>
+              </div>
+              <div class="project-window">
+                <img src="img/brand2visual.png">
+                <div class="project-overlay">
+                   <a href="https://www.brand2visual.com/"><h3>brand2visual</h3></a>
+                </div>
+              </div><div class="project-window">
+                <img src="img/novelscientifics.png">
+                <div class="project-overlay">
+                   <a href="http://novelscientifics.com/"><h3>Novel Scientifics</h3></a>
+                </div>
+              </div><div class="project-window">
+                <img src="img/longrichcity.png">
+                <div class="project-overlay">
+                   <a href="https://longrichcity.com/"><h3>Longrich City</h3></a>
+                </div>
+              </div>
+              <div class="project-window">
+                <img src="img/alphaomega.png">
+                <div class="project-overlay">
+                   <a href="https://alphaomega.care/"><h3>Alpha Omega</h3></a>
+                </div>
+              </div><div class="project-window">
+                <img src="img/bestmedicalsupply.png">
+                <div class="project-overlay">
+                   <a href="https://bestmedicalsupplyllc.com/"><h3>Best</h3></a>
+                </div>
+              </div><div class="project-window">
+                <img src="img/imageplastics.png">
+                <div class="project-overlay">
+                   <a href="https://www.imageplasticsurgery.net/"><h3>Image</h3></a>
+                </div>
+              </div>
+              <div class="clearing-float"></div>
+           </div>
+         </div>
+      </div>
+      <div id="contact_div">
+         <a class="close_button" id="right-close-btn" onclick="closeContent()"><</a>
+         <div class="div_content_contact">
+            <div id="contact-form-div">
+               <form action="">
+                  <input class="contact-form-input" type="text" name="username" id="username" placeholder="enter your name">
+                  <input class="contact-form-input" type="email" name="useremail" id="useremail" placeholder="enter your email id">
+                  <input class="contact-form-input" type="text" name="usersubject" id="usersubject" placeholder="enter subject">
+                  <textarea class="contact-form-textarea" name="usermessage" id="usermessage" placeholder="enter your message"></textarea>
+                  <input type="submit" class="contact-form-submit" value="hit me">
+               </form>
+            </div>
+            <div id="contact-map-div">
+               <div id="map_loading">
+                 <img id="map-loading-image" src="img/loading3.gif" alt="Loading..." />
+               </div>
+               <iframe onload="map_loading()" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.7242623774414!2d83.20189671413806!3d17.804651595324486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3966e3c47863a3%3A0xea261df2965eebc5!2sLakshmi%20Kamala%20Sree%20Paradise!5e0!3m2!1sen!2sin!4v1626146014834!5m2!1sen!2sin?transparent=0" style="border:0;" allowfullscreen="" loading="lazy" tra></iframe>
+               <address>
+                  <h3>Address</h3>
+                  <span>Door Number: 10-13/1/16 (401),</span>
+                  <span>Lakshmi Kamalasree Paradise,</span>
+                  <span>Chanukyanagar (P.F.Colony),</span>
+                  <span>Pathavooru, Chinnamushidiwada,</span>
+                  <span>Visakhapatnam. 530051</span>
+               </address>
+            </div>
+            <div class="clearing-float"></div>
+         </div>
+      </div>
+   </body>
+</html>
+

@@ -1,0 +1,519 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #000;
+	min-height: 100vh;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.close_button{
+	/*display: none;*/
+	position: absolute;
+	top: -12px;
+	right: 27px;
+	font-size: 50px;
+	cursor: pointer;
+	font-family: cursive;
+	color: #b0b0bb;
+	z-index: +9;
+}
+
+.overlay{
+	width: 100%;
+	height: 90%;
+	background-color: #000;
+	opacity: 0.7;
+	position: absolute;
+}
+.footer-overlay{
+	width: 100%;
+	height: 10%;
+	background-color: #000;
+	opacity: 0.7;
+	position: absolute;
+	top: 90%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+.footer-overlay p{
+	width: 100%;
+	text-align: center;
+}
+
+#contact-form-div {
+	float: left;
+	width: 50%;
+}
+
+#contact-map-div{
+	width: 48%;
+	height: 400px;
+	float: left;
+}
+
+.clearing-float{
+	clear: both;
+}
+
+::placeholder {
+  color: #b0b0bb;
+  font-size: medium;
+  font-family: arial;
+  text-align: center;
+}
+
+@keyframes left_div_h1{
+	0% {color: gold;}
+	25% {color:chartreuse;}
+	50% {color:#F60;}
+	75% {color:#00FFE4;}
+	100% {color:gold;}
+}
+
+@keyframes menu1{
+	from {left:-170px;}
+	to {left:10px;}
+}
+
+
+#left_div,#right_div{
+	float:left;
+}
+
+#main_div{
+	height: 100vh;
+}
+#left_div{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	/*background-color: #F69160;*/
+	background-image: url(../img/showcase.jpg), url(../img/logo_html.png), url(../img/logo_css.png);
+	background-size: cover, 50px 50px, 50px 50px;
+	background-blend-mode: overlay;
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-position: right bottom, left bottom;
+	/*padding: 10px 10px 0px 10px;*/
+	color: gold;
+}
+
+#left_div h1{
+	text-align: center;
+	margin-top: 10px;
+	text-transform: uppercase;
+	animation: left_div_h1 20s ease-in-out 1s infinite alternate-reverse;
+}
+#left_div h1::first-letter{
+	font-family: cursive;
+	font-size: larger;
+}
+
+#left_div_cite{
+	display: block;
+	text-align: center;
+	font-size: larger;
+	text-transform: uppercase;
+}
+
+#menu{
+	list-style-type: none;
+}
+
+#menu li{
+	display: none;
+	margin-top: 20px;
+	margin-left: auto;
+	width: 90%;
+}
+
+#menu li a{
+	text-decoration: none;
+	text-transform: capitalize;
+	color: chartreuse;
+	font-size:x-large;
+}
+
+.bcvSpan{
+	font-family: cursive;
+	color: gold;
+	text-transform: uppercase;	
+}
+
+#right_div{
+	height: 100vh;
+	width: 0%;
+	background-color: #000;
+}
+
+#about_div{
+	display: none;
+	font-family: monospace;
+}
+
+.div_content_about{
+	position: relative;
+	background-color: #000;
+	padding: 5px;
+	height: 100%;
+	max-height: 100%;
+	overflow-y: scroll;
+}
+
+.div_content_about p>img{
+	width: 25%;
+	max-width: 100%;
+	display: block;
+	min-height: 200px;
+	max-height: 405px;
+	float: right;
+	margin-left: 15px;
+	border: 2px solid rgb(2, 155, 247);
+}
+
+.div_content_about p {
+	color: #b0b0bb;
+	font-family: Arial, sans-serif;
+	font-size: 1.1em;
+	text-align: justify;
+	margin-top: 5px;
+	padding: 2px 2px 2px 2px;
+}
+#projects_div{
+    display: none;
+	font-family: monospace;
+}
+.div_content_projects{
+   position: relative;
+	background-color: #000;
+	padding: 5px;
+	min-height: 100%;
+	overflow-y: scroll;
+}
+
+#contact_div{
+    display: none;
+	font-family: monospace;
+}
+.div_content_contact{
+    position: relative;
+	background-color: #000;
+	padding: 5px;
+	height: 100%;
+	max-height: 100%;
+	overflow-y: scroll;
+}
+
+.contact-form-input {
+	width: 90%;
+	margin: 5px auto;
+	display: block;
+	border: 1px solid #029bf7;
+	border-radius: 5px;
+	line-height: 1.5;
+	font-size: x-large;
+	text-transform: capitalize;
+	text-align: center;
+	background-color: #000;
+	color: #b0b0bb;
+}
+
+.contact-form-textarea {
+	min-height: 385px;
+	width: 90%;
+	margin: 5px auto;
+	display: block;
+	border: 1px solid #029bf7;
+	border-radius: 5px;
+	line-height: 1.5;
+	font-size: x-large;
+	text-transform: capitalize;
+	background-color: #000;
+	color: #b0b0bb;
+}
+.contact-form-submit {
+	width: 50%;
+	margin: auto;
+	display: block;
+	background-color: #029bf7;
+	border-radius: 5px;
+	color: #171616;
+	padding: 5px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: cursive;
+	cursor: pointer;
+}
+
+#contact-form-div,
+#contact-map-div{
+	height: 92%;
+}
+
+#contact-map-div{
+	position: relative;
+}
+
+
+#contact-map-div iframe{
+	width: 100%;
+	height: 75%;
+	margin: 5px 0px;
+}
+
+#projects-holder {
+	min-height: 100%;
+	width: 100%;
+}
+
+.project-window {
+	position: relative;
+	width: 32.3%;
+	height: 184px;
+	float: left;
+	margin: 5px 0px 0px 0.5%;
+}
+
+.project-window img {
+	width: 25%;
+	height: 40%;
+	display: block;
+	margin: 2px auto 0px;
+}
+
+.project-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	background-color: #000;
+	opacity: 0.3;
+	color: ghostwhite;
+	text-transform: uppercase;
+	font-size: x-large;
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+
+.project-overlay:hover{
+	opacity: 1;
+}
+
+.project-overlay a{
+	text-decoration: none;
+	color: ghostwhite;
+}
+
+address{
+	color: #b0b0bb;
+}
+
+address h3{
+	font-style: normal;
+	color: ghostwhite;
+}
+
+address span{
+	display: inline-block;
+	width: 100%;
+}
+/*
+#loading {
+	position: fixed;
+	display: block;
+	text-align: center;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 5px solid blue;
+	border-right: 5px solid green;
+	border-bottom: 5px solid red;
+	border-left: 5px solid #f30;
+	width: 50px;
+	height: 50px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+	z-index: +9;
+	top: 42%;
+	left: 45%;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+*/
+
+#loading {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.3;
+  background-color: #000;
+  z-index: 99;
+}
+
+#loading-image {
+	position: absolute;
+	top: 25%;
+	left: 41%;
+	z-index: 100;
+	height: 40vh;
+	width: 40vh;
+}
+
+
+#map_loading {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.3;
+  background-color: #000;
+  z-index: 999;
+}
+
+#map-loading-image {
+	position: absolute;
+	top: 25%;
+	left: 38%;
+	z-index: 100;
+	height: 40vh;
+	width: 40vh;
+}
+/*responsive*/
+
+
+@media only screen and (max-width: 1034px) {
+  .project-window {
+	position: relative;
+	width: 49%;
+	height: 184px;
+	/* background-color: blue; */
+	float: left;
+	margin: 5px 0px 0px 0.5%;
+  }
+}
+
+
+@media only screen and (max-width: 594px) {
+  .project-window {
+	position: relative;
+	width: 99%;
+	height: 184px;
+	/* background-color: blue; */
+	float: left;
+	margin: 5px 0px 0px 0.5%;
+  }
+}
+
+@media only screen and (max-width: 588px) {
+  #loading-image {
+	position: absolute;
+	top: 25%;
+	left: 32%;
+	z-index: 100;
+	height: 40vh;
+	width: 40vh;
+	}
+}
+
+@media only screen and (max-width: 394px) {
+  #loading-image {
+	position: absolute;
+	top: 25%;
+	left: 27%;
+	z-index: 100;
+	height: 40vh;
+	width: 40vh;
+	}
+}  
+
+@media only screen and (max-width: 767px) {
+  address{
+  	text-align: center
+  }
+  #right_div{
+  	width:0%;
+	border: none;
+	height: 100vh;
+  }
+  #left_div{
+  	width: 100%;
+  	height: 100vh;
+	overflow-y: scroll;
+  }
+ 
+  .div_content_about{
+  	height: 555px;
+  	border: 3px solid #b0b0bb;;
+	overflow-y: scroll;
+  }
+  .div_content_about p > img{
+  	float: none;
+  	width: 100%;
+  	max-width: 100%;
+  	margin: 0px 0px 10px 0px;
+  }
+  .div_content_about p{
+  	text-align: justify;
+  	text-align-last: center;
+  }
+  #contact-form-div,
+  #contact-map-div{
+  	float: none;
+  	width: 100%;
+  	margin: 5px 0px;
+  	height: 92vh;
+  }
+
+  #contact-form-div{
+  	padding-top: 31px;
+  }
+  #contact-map-div{
+  	position: relative;
+  }
+  #contact-map-div iframe{
+  	width: 100%;
+  	height: 98vh;
+  }
+  .contact-form-input,
+  .contact-form-textarea{
+  	width: 100%;
+  }
+  .contact-form-textarea{
+  	min-height: 265px;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+	#menu li a{
+		font-size:large;
+	}
+}
